@@ -39,7 +39,7 @@ install: $(DYLIB) installhdrs
 	install -m 755 $(DYLIB) $(ROOT)/usr/lib/
 
 installhdrs:
-	install -d $(ROOT)/usr/local/include
-	install -m 644 $(addprefix $(SRCROOT)/,libutil.h mntopts.h tzlink.h wipefs.h) $(ROOT)/usr/local/include/
+	install -d $(ROOT)/usr/include
+	install -m 644 $(addprefix $(SRCROOT)/,libutil.h mntopts.h tzlink.h wipefs.h) $(ROOT)/usr/include/
 
 .PHONY: all install installhdrs
